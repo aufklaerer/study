@@ -22,10 +22,10 @@
             var email = document.getElementById("email");
             var section = document.getElementById("section");
             var date = document.getElementById("date");
-            //if (fio.value.length == 0 || phone.value.length == 0 || email.value.length == 0) { alert("Все поля, кроме даты рождения, обязательны для заполнения."); }
-            //if (!/^([А-Я]|[а-я])*$/.test(fio.value)) { alert("Поля имя, фамилия, отчество содержат только буквы русского алфавита."); }
-            //if (!/^\+7\d{9}$/.test(phone.value)) { alert("Поле телефон содержит только цифры, длина 11 символов, первые два символа +7."); }
-            //if (!/^\S+@\S+\.\S+$/.test(email.value)) { alert("Адрес электронной почты не корректен.");};
+            if (fio.value.length == 0 || phone.value.length == 0 || email.value.length == 0) { alert("Все поля, кроме даты рождения, обязательны для заполнения."); }
+            if (!/^([А-Я]|[а-я])*$/.test(fio.value)) { alert("Поля имя, фамилия, отчество содержат только буквы русского алфавита."); }
+            if (!/^\+7\d{9}$/.test(phone.value)) { alert("Поле телефон содержит только цифры, длина 11 символов, первые два символа +7."); }
+            if (!/^\S+@\S+\.\S+$/.test(email.value)) { alert("Адрес электронной почты не корректен.");};
             document.getElementById("form").innerHTML = `ФИО:${fio.value}<br>Контактный телефон:${phone.value}<br>Адрес электронной почты:${email.value}<br>Секции конференции:${section.value}<br>Дата рождения:${date.value}`;     
         }
     </script>
